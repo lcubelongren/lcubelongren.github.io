@@ -1,2 +1,3 @@
-# website_local_library
-Local Library website written in Django
+# Lloyd Web
+
+Local Library - website written in Django
