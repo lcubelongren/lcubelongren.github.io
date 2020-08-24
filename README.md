@@ -1,3 +1,3 @@
 # Lloyd Web
 
-Local Library website written in Django
+Local Library - website written in Django
