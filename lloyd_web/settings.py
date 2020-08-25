@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '-+^=s@ef(=@5-j-5m&rd35)1*o(0g1
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['lloydweb.herokuapp.com', '192.168.1.106']
+ALLOWED_HOSTS = ['nocu.be', '192.168.1.106']
 
 
 # Application definition
