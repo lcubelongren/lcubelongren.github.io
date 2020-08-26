@@ -2,4 +2,6 @@
 
 Local Library - website written in Django
 
-Current url: https://immense-tundra-31142.herokuapp.com/polls/
+Current url: http://www.nocu.be/polls/
+
+Working on url: nocu.be/polls
