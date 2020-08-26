@@ -1,6 +1,6 @@
 # Lloyd Web
 
-Local Library - website written in Django
+Local Library - website written in Django, hosted by Heroku
 
 Current url: https://lloydweb.herokuapp.com
 
