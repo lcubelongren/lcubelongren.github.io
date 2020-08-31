@@ -1,7 +1,5 @@
 # Lloyd Web
 
-Local Library - website written in Django
+Local Library - website written with Django, hosted by Heroku
 
-Current url: http://www.nocu.be/polls/
-
-Working on url: nocu.be/polls
+Current url: https://www.nocu.be/
