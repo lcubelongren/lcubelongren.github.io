@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['.herokuapp.com', '.nocu.be', '127.0.0.1']
 INSTALLED_APPS = [
     'home_page.apps.HomepageConfig',
     'polls.apps.PollsConfig',
+    'dogo.apps.DogoConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
