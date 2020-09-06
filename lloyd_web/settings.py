@@ -34,9 +34,9 @@ ALLOWED_HOSTS = ['.herokuapp.com', '.nocu.be', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'home_page.apps.HomepageConfig',
-    'polls.apps.PollsConfig',
-    'dogo.apps.DogoConfig',
+    'pages.home_page.apps.HomepageConfig',
+    'pages.polls.apps.PollsConfig',
+    'pages.dogo.apps.DogoConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -61,7 +61,7 @@ ROOT_URLCONF = 'lloyd_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
