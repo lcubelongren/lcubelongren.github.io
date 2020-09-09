@@ -34,9 +34,10 @@ ALLOWED_HOSTS = ['.herokuapp.com', '.nocu.be', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'pages.home_page.apps.HomepageConfig',
-    'pages.polls.apps.PollsConfig',
-    'pages.dogo.apps.DogoConfig',
+    'pages.homepage.apps.HomepageConfig',
+    'pages.projects.apps.ProjectsConfig',
+    'pages.photos.apps.PhotosConfig',
+    'pages.misc.apps.MiscConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

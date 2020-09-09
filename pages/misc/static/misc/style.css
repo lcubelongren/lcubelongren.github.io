@@ -1,0 +1,92 @@
+:root{
+	--main-font: "Lucida Console";
+	--brdr-width: 3px;
+	--brdr-color: #999;
+	--brdr-style: solid;
+}
+
+header{
+	position: fixed;
+	color: green; font-family: var(--main-font);
+	font-size: 35px;
+}
+
+header.v-ani{top: 50px; left: -10px; z-index: -1;}
+
+header.w-no{top: 73px; left: 40px; transform: rotate(-90deg);}
+header.w-cube{top: 40px; left: 50px;}
+
+hr.border-top{
+	position: fixed;
+	border: none;
+	border-top: var(--brdr-width) var(--brdr-style) var(--brdr-color); 
+	width: 100%; 
+	margin-top: 50px;
+	margin-left: 130px;
+	z-index: 2;
+}
+
+hr.border-left{ 
+	position: fixed;
+	border: none;
+	border-top: var(--brdr-width) var(--brdr-style) var(--brdr-color); 
+	transform: rotate(90deg);
+	width: 1000px;
+	margin-top: 605px;
+	margin-left: -448px;
+	z-index: 2;
+}
+
+hr.border-under{
+	position: fixed;
+	border: none;
+	border-top: var(--brdr-width) dashed var(--brdr-color); 
+	width: 850px;
+	margin-top: 170px;
+	margin-left: 300px;
+	z-index: 2;
+}
+
+hr.border-right{
+	position: fixed;
+	border: none;
+	border-top: var(--brdr-width) dashed var(--brdr-color); 
+	transform: rotate(90deg);
+	width: 1000px;
+	margin-top: 669px;
+	margin-left: 650px;
+	z-index: 2;
+}
+
+.button{
+	position: fixed;
+	border: 2.5px solid #999;
+	background-color: transparent;
+	color: green;
+	text-align: center;
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 650;
+	margin-top: 80px;
+	width: 150px;
+	height: 60px;
+	z-index: 4;
+}
+
+.button-home{
+	position: fixed;
+	border: 3px transparent;
+	background-color: transparent;
+	width: 100px; height: 80px;
+	margin-left: 30px; margin-top: 30px;
+	outline: none;
+	z-index: 4;
+}
+
+.place1{margin-left: 425px;}
+.place2{margin-left: 625px;}
+.place3{margin-left: 825px;}
+
+
+
+
