@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class HomepageConfig(AppConfig):
-    name = 'pages.projects'
+    name = 'pages.cv'

@@ -3,7 +3,7 @@ from django.template import loader
 
 
 def index(request):
-    template = loader.get_template('projects/index.html')
+    template = loader.get_template('projects/projects.html')
     context = {
 	}
     return HttpResponse(template.render(context, request))

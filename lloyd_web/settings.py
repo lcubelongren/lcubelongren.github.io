@@ -25,8 +25,8 @@ import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '-+^=s@ef(=@5-j-5m&rd35)1*o(0g19!ru$a&#=)%p1j*u5$fg')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = True
+# DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ['.herokuapp.com', '.nocu.be', '127.0.0.1']
 
@@ -35,9 +35,6 @@ ALLOWED_HOSTS = ['.herokuapp.com', '.nocu.be', '127.0.0.1']
 
 INSTALLED_APPS = [
     'pages.homepage.apps.HomepageConfig',
-    'pages.projects.apps.ProjectsConfig',
-    'pages.photos.apps.PhotosConfig',
-    'pages.misc.apps.MiscConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -126,10 +123,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR
 
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
