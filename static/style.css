@@ -5,18 +5,23 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 @import '~@csstools/normalize.css';
 
 /* objects */
-.bar{width: 76%; margin-left: 12%; margin-right: 12%; position: static; overflow: hidden;}
+.bar{width: 76%; margin-left: 12%; margin-right: 12%; overflow: hidden;}
 .bar-item{width: auto; float: left; display: inline-block; padding: 20px; white-space: normal; outline: 0; text-align:center;}
 
 /* positions */
 .top{position: fixed; z-index: 1; top: 1.5%;}
 .home{float: right;}
 
+/* shapes */
+.background{height: 100%; width: 76%; margin-left: 12%; margin-right: 12%; top: 1.5%; position: fixed;}
+
 /* fonts */
 .title{font-size: 30px;}
 .button{font-size: 25px;}
 
 /* colors */
-.black{color:#fff; background-color:#111;}
-.button{color:#fff; background-color:#111;}
-.button:hover{color:#000; background-color:#ccc;}
+.bar{color: #F0F8E5; background-color: #5573AB;}
+.button{color: #F0F8E5; background-color: #5573AB;}
+.button:hover{color: #1B325F; background-color: #F0F8E5;}
+.background{background-color: #8296BA;}
+.page{background-color: #F0F8E5;}
