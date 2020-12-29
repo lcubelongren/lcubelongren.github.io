@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>NoCube</title>
+<title>nocube</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <script src="{% static 'script.js' %}"></script>
@@ -10,20 +10,46 @@
 
 <!-- Navigation -->
 <div class="bar top black">
-<a class="bar-item title">NoCube --- the website of Luke Longren</a>
-<a href="..\about" class="bar-item button">About</a>
-<a href="..\projects" class="bar-item button">Projects</a>
-<a href="..\cv" class="bar-item button">CV</a>
+<a class="bar-item title">nocube</a>
+<a href="..\projects" class="bar-item button anim-button-other">Projects</a>
+<a href="..\cv" class="bar-item button anim-button-other">CV</a>
 <a href=".." class="bar-item button home">|^|</a>
 </div>
+
+<!-- Page Title -->
+<a class="bar-item page-title anim-button-main m1">About</a>
 
 <!-- Background -->
 <div class="background"></div>
 
-<!-- Content -->
-<div id="home" class="content">
-
+<!-- Icon Links -->
+<div class="sm github si1">
+<img src="{% static '/images/icons/github.png' %}" alt="github" class="sm github si1">
+<a href="https://github.com/lcubelongren" class="sm-button"></a>
+</div>
+<div class="sm steam si2">
+<img src="{% static '/images/icons/steam.png' %}" alt="steam" class="sm steam si2">
+<a href="https://steamcommunity.com/id/nocu-be/" class="sm-button"></a>
+</div>
+<div class="sm lichess si3">
+<img src="{% static '/images/icons/lichess.png' %}" alt="lichess" class="sm lichess si3">
+<a href="https://lichess.org/@/loydl" class="sm-button"></a>
+</div>
+<div class="sm instagram si4">
+<img src="{% static '/images/icons/instagram.png' %}" alt="instagram" class="sm instagram si4">
+<a href="https://www.instagram.com/lukelongren/" class="sm-button"></a>
 </div>
 
-</body>
+<!-- Content -->
+<div class="content-about">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor sem purus, ut condimentum tortor molestie non. Fusce turpis augue, consequat a dui eu, pellentesque dictum arcu. Nulla scelerisque sit amet felis a aliquet. 
+Praesent a tempus ex, nec congue dolor. Nullam fringilla porta gravida. Sed elementum posuere porta. Phasellus vel mi dapibus, sagittis nibh sed, molestie sem. Pellentesque felis lectus, placerat ac arcu vel, dignissim ultrices dolor. 
+Nam blandit ut velit sed hendrerit. Aenean enim sem, mattis vitae efficitur quis, porta eget lectus. Nullam at ligula in mauris sollicitudin volutpat ac sit amet elit. Nulla facilisi. Sed lacinia id odio et gravida. 
+Cras lacus nulla, iaculis a quam ac, vestibulum efficitur ligula.
+</p>
+</div>
+
+
+
 </html>

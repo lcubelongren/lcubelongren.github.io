@@ -4,20 +4,40 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* git.io/normalize */
 @import '~@csstools/normalize.css';
 
+
 /* objects */
-.bar{width: 76%; margin-left: 12%; margin-right: 12%; overflow: hidden;}
-.bar-item{width: auto; float: left; display: inline-block; padding: 20px; white-space: normal; outline: 0; text-align:center;}
+.bar{width: 80%; margin-left: 10%; margin-right: 10%; overflow: hidden;}
+.bar-item{float: left; display: inline-block; padding: 20px; white-space: normal; outline: 0; text-align: center;}
+.title{width: 50%;}
+.page-title{position: relative; top: 85px; margin-left: 11%;}
+
+.sm{position: fixed; width: 100px; height: 100px; padding: 12px; border-style: solid; border-width: 4px;}
+.sm-button{position: absolute; width: 100px; height: 100px; transform: translate(-15%, -15%);}
+.sm:hover{opacity: 0.7;}
+.github{left: 80%; top: 15%;}
+.steam{left: 80%; top: 30%;}
+.lichess{left: 80%; top: 45%;}
+.instagram{left: 80%; top: 60%;}
+
 
 /* positions */
-.top{position: fixed; z-index: 1; top: 1.5%;}
+.top{position: fixed; z-index: 1; top: 15px;}
 .home{float: right;}
+.content-home{position: relative; margin-left: 20%; top: 80px;}
+.content-about{position: relative; margin-left: 20%; margin-right: 20%; padding: 20px 50px 0px 50px; top: 120px;}
+
 
 /* shapes */
-.background{height: 100%; width: 76%; margin-left: 12%; margin-right: 12%; top: 1.5%; position: fixed;}
+.background{height: 100%; width: 80%; margin-left: 10%; margin-right: 10%; top: 15px; position: fixed; z-index: -1;}
+
 
 /* fonts */
 .title{font-size: 30px;}
 .button{font-size: 25px;}
+.page-title{font-size: 45px; font-weight: bold;}
+.content-home{font-size: 28px;}
+.content-about{font-size: 22px;}
+
 
 /* colors */
 .bar{color: #F0F8E5; background-color: #5573AB;}
@@ -25,3 +45,93 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 .button:hover{color: #1B325F; background-color: #F0F8E5;}
 .background{background-color: #8296BA;}
 .page{background-color: #F0F8E5;}
+.page-title{color: #F0F8E5;}
+.content-home{color: #F0F8E5;}
+.content-about{}
+
+
+/* animations */
+/* --- */
+/* navigation bar */
+.anim-home {
+  position: relative;
+  animation-name: home;
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease;
+}
+
+@keyframes home {
+  0%   {left: 0px; top: 0px;}
+  50%  {left: 0px; top: -5px;}
+  100% {left: 0px; top: 0px;}
+}
+
+.anim-button-main {
+  position: relative;
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0,0,0.3,1);
+  z-index: 3;
+}
+
+.m1 {animation-name: m1;}
+@keyframes m1 {
+  0%   {left: 38%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
+  25%  {left: 38%; top: 85px; font-size: 25px; font-weight: normal;}
+  100% {left:  0%; top: 85px; font-size: 45px; font-weight: bold;}
+}
+
+.m2 {animation-name: m2;}
+@keyframes m2 {
+  0%   {left: 44.5%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
+  25%  {left: 44.5%; top: 85px; font-size: 25px; font-weight: normal;}
+  100% {left:    0%; top: 85px; font-size: 45px; font-weight: bold;}
+}
+
+.m3 {animation-name: m3;}
+@keyframes m3 {
+  0%   {left: 53%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
+  25%  {left: 53%; top: 85px; font-size: 25px; font-weight: normal;}
+  100% {left:  0%; top: 85px; font-size: 45px; font-weight: bold;}
+}
+
+.anim-button-other {
+  position: relative;
+  animation-duration: 0.9s;
+  animation-name: button-other;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes button-other {
+  0%   {left: 9%;}
+  100% {left: 0%;}
+}
+
+/* page transition */
+.si1{animation-duration: 0.9s; animation-name: si1;}
+@keyframes si1 {
+	0%   {top: 200%;}
+	100% {top: 15%;}
+}
+
+.si2{animation-duration: 0.9s; animation-name: si2;}
+@keyframes si2 {
+	0%   {top: 200%;}
+	100% {top: 30%;}
+}
+
+.si3{animation-duration: 0.9s; animation-name: si3;}
+@keyframes si3 {
+	0%   {top: 200%;}
+	100% {top: 45%;}
+}
+
+.si4{animation-duration: 0.9s; animation-name: si4;}
+@keyframes si4 {
+	0%   {top: 200%;}
+	100% {top: 60%;}
+}
+
+
+
+
