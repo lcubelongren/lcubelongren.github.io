@@ -6,48 +6,62 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 
 /* objects */
+:root {
+--sm-origin: 60px;
+--sm-width: 80px;
+}
+
 .bar{width: 80%; margin-left: 10%; margin-right: 10%; overflow: hidden;}
 .bar-item{float: left; display: inline-block; padding: 20px; white-space: normal; outline: 0; text-align: center;}
 .title{width: 50%;}
-.page-title{position: relative; top: 85px; margin-left: 11%;}
 
-.sm{position: fixed; width: 100px; height: 100px; padding: 12px; border-style: solid; border-width: 4px;}
-.sm-button{position: absolute; width: 100px; height: 100px; transform: translate(-15%, -15%);}
+.sm{position: fixed; width: var(--sm-width); height: var(--sm-width); padding: 12px; border-style: solid; border-width: 4px;}
+.sm-button{position: absolute; width: var(--sm-width); height: var(--sm-width); transform: translate(-15%, -15%);}
 .sm:hover{opacity: 0.7;}
-.github{left: 80%; top: 15%;}
-.steam{left: 80%; top: 30%;}
-.lichess{left: 80%; top: 45%;}
-.instagram{left: 80%; top: 60%;}
+.github{left: 80%; top: calc(var(--sm-origin) + var(--sm-width));}
+.steam{left: 80%; top: calc(var(--sm-origin) + 2*var(--sm-width));}
+.lichess{left: 80%; top: calc(var(--sm-origin) + 3*var(--sm-width));}
+.instagram{left: 80%; top: calc(var(--sm-origin) + 4*var(--sm-width));}
 
 
 /* positions */
 .top{position: fixed; z-index: 1; top: 15px;}
 .home{float: right;}
+.page-title{top: 85px; margin-left: 11%;}
+
 .content-home{position: relative; margin-left: 20%; top: 80px;}
 .content-about{position: relative; margin-left: 20%; margin-right: 20%; padding: 20px 50px 0px 50px; top: 120px;}
 
 
 /* shapes */
-.background{height: 100%; width: 80%; margin-left: 10%; margin-right: 10%; top: 15px; position: fixed; z-index: -1;}
+.background{height: 150%; width: 80%; margin-left: 10%; margin-right: 10%; top: 15px; position: fixed; z-index: -1;}
 
 
 /* fonts */
 .title{font-size: 30px;}
 .button{font-size: 25px;}
+.home{font-size: 30px; font-weight: bold;}
 .page-title{font-size: 45px; font-weight: bold;}
 .content-home{font-size: 28px;}
 .content-about{font-size: 22px;}
 
 
 /* colors */
-.bar{color: #F0F8E5; background-color: #5573AB;}
-.button{color: #F0F8E5; background-color: #5573AB;}
-.button:hover{color: #1B325F; background-color: #F0F8E5;}
-.background{background-color: #8296BA;}
-.page{background-color: #F0F8E5;}
-.page-title{color: #F0F8E5;}
-.content-home{color: #F0F8E5;}
-.content-about{}
+:root {
+--text-color: #12151F;
+--secondary-color: #8AA899;
+--page-color: #F7F4E9;
+--background-color: #1D1D2C;
+}
+
+.bar{color: var(--text-color); background-color: var(--secondary-color);}
+.button{color: var(--text-color); background-color: var(--secondary-color);}
+.button:hover{color: var(--page-color); background-color: var(--background-color);}
+.background{background-color: var(--page-color);}
+.page{background-color: var(--background-color);}
+.page-title{color: var(--text-color);}
+.content-home{color: var(--text-color);}
+.content-about{color: var(--text-color);}
 
 
 /* animations */
@@ -107,31 +121,44 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
   100% {left: 0%;}
 }
 
-/* page transition */
+/* about/buttons transition */
 .si1{animation-duration: 0.9s; animation-name: si1;}
 @keyframes si1 {
-	0%   {top: 200%;}
-	100% {top: 15%;}
+	0%   {top: 150%;}
+	100% {top: calc(var(--sm-origin) + var(--sm-width));}
 }
 
 .si2{animation-duration: 0.9s; animation-name: si2;}
 @keyframes si2 {
-	0%   {top: 200%;}
-	100% {top: 30%;}
+	0%   {top: 150%;}
+	100% {top: calc(var(--sm-origin) + 2*var(--sm-width));}
 }
 
 .si3{animation-duration: 0.9s; animation-name: si3;}
 @keyframes si3 {
-	0%   {top: 200%;}
-	100% {top: 45%;}
+	0%   {top: 150%;}
+	100% {top: calc(var(--sm-origin) + 3*var(--sm-width));}
 }
 
 .si4{animation-duration: 0.9s; animation-name: si4;}
 @keyframes si4 {
-	0%   {top: 200%;}
-	100% {top: 60%;}
+	0%   {top: 150%;}
+	100% {top: calc(var(--sm-origin) + 4*var(--sm-width));}
 }
 
+/* about/content transition NOT USED*/
+.anim-content {
+  position: relative;
+  animation-duration: 0.9s;
+  animation-name: anim-content;
+}
+@keyframes anim-content {
+  0%   {top: 800px;}
+  100% {top: 120px;}
+}
 
-
+/* fitting for other screens */
+@media (max-width: 900px) {
+  .title{display: none;}
+}
 
