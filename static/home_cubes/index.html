@@ -1,33 +1,13 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>nocube</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="{% static 'style.css' %}">
-<script src="{% static 'script.js' %}"></script>
-<body class="page">
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - L.L.L. Cube</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
-<!-- Navigation -->
-<div class="bar top black">
-<a class="bar-item title">nocube</a>
-<a href="about" class="bar-item button">About</a>
-<a href="projects" class="bar-item button">Projects</a>
-<a href="cv" class="bar-item button">CV</a>
-<a href="" class="bar-item button home anim-home">^</a>
-</div>
-
-<!-- Background -->
-<div class="background"></div>
-
-<!-- Content -->
-<div class="content-home">
-<p>The website of Luke Longren.</p>
-</div>
-
-<!-- Design -->
-<div class="design-home">
-<link rel="stylesheet" href="{% static 'home_cubes/style.css' %}">
+</head>
+<body>
 <!-- partial:index.partial.html -->
 <div class="wrapper">
   <div class="cube">
@@ -164,7 +144,6 @@
   </div>
 </div>
 <!-- partial -->
-</div>
-
+  
 </body>
 </html>

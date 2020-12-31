@@ -29,8 +29,10 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 .home{float: right;}
 .page-title{top: 85px; margin-left: 11%;}
 
-.content-home{position: relative; margin-left: 20%; top: 80px;}
+.content-home{position: absolute; left: 15%; top: 85px;}
 .content-about{position: relative; margin-left: 20%; margin-right: 20%; padding: 20px 50px 0px 50px; top: 120px;}
+
+.design-home{position: absolute; left: 15%; bottom: 5%;}
 
 
 /* shapes */
