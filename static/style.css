@@ -81,6 +81,15 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     display: none;
 }
 
+.cv-pdf {
+	position: absolute;
+	top: 170px;
+	left: 50.5%;
+	transform: translate(-50%, 0%);
+	width: 70%;
+	height: 650px;
+}
+
 #arrow-planetary-orbits {
 	transform: rotate(35deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
