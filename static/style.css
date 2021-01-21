@@ -60,7 +60,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 	text-overflow: ellipsis;
 	border: none;
 	outline: none;
-	background: var(--secondary-color);
+	background: var(--secondary-color);	
 }
 
 .button-arrow {
@@ -74,21 +74,24 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 .dropdown-project {
 	width: 100%;
-    padding: 50px;
-    text-align: center;
-    margin-top: 20px;
+	padding: 50px;
+	text-align: center;
+	margin-top: 20px;
 	margin-bottom: 20px;
-    display: none;
+	display: none;
 }
 
 .cv-pdf {
 	position: absolute;
-	top: 170px;
-	left: 50.5%;
+	top: 160px;
+	padding-bottom: 160px;
+	left: 50%;
 	transform: translate(-50%, 0%);
-	width: 70%;
-	height: 650px;
+	width: 50%;
+	height: 100%;
 }
+
+#project-section-python {}
 
 #arrow-planetary-orbits {
 	transform: rotate(35deg) translate(0px,-10px);

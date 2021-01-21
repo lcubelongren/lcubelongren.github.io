@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <script src="{% static 'script.js' %}"></script>
-<body class="page">
+<body class="page" style="overflow: hidden;">
 
 <!-- Navigation -->
 <div class="bar top black">
@@ -24,7 +24,7 @@
 
 <!-- Content -->
 <div>
-<iframe src="{% static 'pdfs/paper_template.pdf' %}" class="cv-pdf"></iframe>
+<embed src="{% static 'pdfs/paper_template.pdf' %}#toolbar=0" class="cv-pdf"></embed>
 </div>
 
 </body>
