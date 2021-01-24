@@ -24,12 +24,16 @@
 <div class="ceiling"></div>
 
 <!-- Content -->
-<div id="project-section-python" class="container-project">
+<div class="container-project">
+
+<button onclick="projectsectionFunction('project-section-python')">python</button>
+<div id="project-section-python" class="container-project-section">
+
 <button onclick="projectFunction('planetary_orbits','arrow-planetary-orbits')" class="button-project">
 <i id="arrow-planetary-orbits" class="button-arrow"></i>
 planetary orbits within the solar system
 </button>
-<div id="planetary_orbits" class="dropdown-project">
+<div id="planetary_orbits" class ="dropdown-project">
 this is my planet
 </div>
 
@@ -40,6 +44,10 @@ terrain map of europe
 <div id="terrain_map" class="dropdown-project">
 this is my map
 </div>
+</div>
+
+<button onclick="projectsectionFunction('project-section-misc')">misc</button>
+<div id="project-section-misc" class="container-project-section">
 
 <button onclick="projectFunction('hidden_lisa','arrow-hidden-lisa')" class="button-project">
 <i id="arrow-hidden-lisa" class="button-arrow"></i>
@@ -48,6 +56,8 @@ something hidden
 <div id="hidden_lisa" class="dropdown-project">
 this is my Lisa
 </div>
+</div>
+
 </div>
 
 </body>

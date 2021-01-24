@@ -2,6 +2,15 @@
 /* project function */
 /* this opens more information for an individual project id */
 
+function projectsectionFunction(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "grid") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "grid";
+  }
+}
+
 function projectFunction(id,arrow_id) {
   var x = document.getElementById(id);
   var arrow = document.getElementById(arrow_id);
