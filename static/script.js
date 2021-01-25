@@ -2,12 +2,16 @@
 /* project function */
 /* this opens more information for an individual project id */
 
-function projectsectionFunction(id) {
+function projectsectionFunction(id,butt_id) {
   var x = document.getElementById(id);
+  var butt = document.getElementById(butt_id);
   if (x.style.display === "grid") {
     x.style.display = "none";
+	butt.style.textDecoration = "none";
+	
   } else {
     x.style.display = "grid";
+	butt.style.textDecoration = "underline";
   }
 }
 

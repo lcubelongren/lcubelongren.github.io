@@ -61,11 +61,18 @@ html {overflow-y: scroll;}
 	padding-left: 25px;
 	padding-right: 50px;
 	overflow: hidden; 
-	white-space: nowrap;
+	white-space: nowrap;	
 	text-overflow: ellipsis;
 	border: none;
 	outline: none;
 	background: var(--secondary-color);	
+}
+
+.button-project-section {
+	text-decoration: none;
+	border: none;
+	outline: none;
+	background: transparent;	
 }
 
 .button-arrow {
@@ -98,6 +105,9 @@ html {overflow-y: scroll;}
 
 #project-section-python {display: none;}
 #project-section-misc   {display: none;}
+
+#button-project-section-python {text-decoration: none;}
+#button-project-section-misc   {text-decoration: none;}
 
 #arrow-planetary-orbits {
 	transform: rotate(35deg) translate(0px,-10px);
@@ -143,14 +153,15 @@ html {overflow-y: scroll;}
 .content-home{font-size: 28px; font-family: var(--font-choice);}
 .content-about{font-size: 22px; font-family: var(--font-choice);}
 .button-project{font-size: 24px; font-family: var(--font-choice);}
+.button-project-section{font-size: 30px; font-family: var(--font-choice);}
 
 
 /* colors */
 :root {
---text-color: #12151F;
---secondary-color: #8AA899;
---page-color: #F7F4E9;
---background-color: #1D1D2C;
+	--text-color: #12151F;
+	--secondary-color: #8AA899;
+	--page-color: #F7F4E9;
+	--background-color: #1D1D2C;
 }
 
 .bar{color: var(--text-color); background-color: var(--secondary-color);}
@@ -190,23 +201,23 @@ html {overflow-y: scroll;}
 
 .m1 {animation-name: m1;}
 @keyframes m1 {
-  0%   {left: 38%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
-  25%  {left: 38%; top: 85px; font-size: 25px; font-weight: normal;}
-  100% {left:  0%; top: 85px; font-size: 45px; font-weight: bold;}
+	0%   {left: 38%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
+	25%  {left: 38%; top: 85px; font-size: 25px; font-weight: normal;}
+	100% {left:  0%; top: 85px; font-size: 45px; font-weight: bold;}
 }
 
 .m2 {animation-name: m2;}
 @keyframes m2 {
-  0%   {left: 44.5%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
-  25%  {left: 44.5%; top: 85px; font-size: 25px; font-weight: normal;}
-  100% {left:    0%; top: 85px; font-size: 45px; font-weight: bold;}
+	0%   {left: 44.5%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
+	25%  {left: 44.5%; top: 85px; font-size: 25px; font-weight: normal;}
+	100% {left:    0%; top: 85px; font-size: 45px; font-weight: bold;}
 }
 
 .m3 {animation-name: m3;}
 @keyframes m3 {
-  0%   {left: 53%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
-  25%  {left: 53%; top: 85px; font-size: 25px; font-weight: normal;}
-  100% {left:  0%; top: 85px; font-size: 45px; font-weight: bold;}
+	0%   {left: 53%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
+	25%  {left: 53%; top: 85px; font-size: 25px; font-weight: normal;}
+	100% {left:  0%; top: 85px; font-size: 45px; font-weight: bold;}
 }
 
 .anim-button-other {
@@ -253,8 +264,8 @@ html {overflow-y: scroll;}
   animation-name: anim-content;
 }
 @keyframes anim-content {
-  0%   {top: 800px;}
-  100% {top: 120px;}
+	0%   {top: 800px;}
+	100% {top: 120px;}
 }
 
 /* fitting for other screens */
