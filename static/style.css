@@ -27,11 +27,11 @@ html {overflow-y: scroll;}
 
 /* positions */
 .top{position: fixed; z-index: 5; top: 15px;}
-.home{float: right;}
-.page-title{top: 85px; margin-left: 11%;}
+.home{float: right; text-decoration: none; padding-right: 30px; padding-left: 30px; padding-bottom: 11px;}
+.page-title{top: 90px; margin-left: 12%; float: none;}
 
-.content-home{position: absolute; left: 15%; top: 85px;}
-.content-about{position: relative; margin-left: 20%; margin-right: 20%; padding: 20px 50px 0px 50px; top: 120px;}
+.content-home{position: absolute; left: 15%; top: 90px;}
+.content-about{position: absolute; margin-left: 20%; margin-right: 20%; padding: 20px 50px 0px 50px; top: 160px;}
 
 .design-home{position: absolute; left: 15%; bottom: 5%;}
 
@@ -68,11 +68,19 @@ html {overflow-y: scroll;}
 	background: var(--secondary-color);	
 }
 
+.button-project-section:hover {
+	text-decoration: underline !important; 
+	color: var(--secondary-color);
+}
 .button-project-section {
+	transition-duration: 0.1s;
 	text-decoration: none;
 	border: none;
 	outline: none;
-	background: transparent;	
+	background: transparent;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 25px;
 }
 
 .button-arrow {
@@ -146,14 +154,14 @@ html {overflow-y: scroll;}
 	--font-choice: Helvetica, "Courier New", Monaco;
 }
 
-.title{font-size: 34px; font-family: var(--font-choice);}
+.title{font-size: 34px; font-weight: bold; font-family: var(--font-choice);}
 .button{font-size: 30px; font-family: var(--font-choice);}
-.home{font-size: 30px; font-weight: bold; font-family: var(--font-choice);}
+.home{font-size: 36px; font-weight: bold; font-family: var(--font-choice);}
 .page-title{font-size: 45px; font-weight: bold; font-family: var(--font-choice);}
 .content-home{font-size: 28px; font-family: var(--font-choice);}
-.content-about{font-size: 22px; font-family: var(--font-choice);}
+.content-about{font-size: 20px; font-family: var(--font-choice);}
 .button-project{font-size: 24px; font-family: var(--font-choice);}
-.button-project-section{font-size: 30px; font-family: var(--font-choice);}
+.button-project-section{font-size: 34px; font-family: var(--font-choice);}
 
 
 /* colors */
@@ -202,22 +210,22 @@ html {overflow-y: scroll;}
 .m1 {animation-name: m1;}
 @keyframes m1 {
 	0%   {left: 38%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
-	25%  {left: 38%; top: 85px; font-size: 25px; font-weight: normal;}
-	100% {left:  0%; top: 85px; font-size: 45px; font-weight: bold;}
+	25%  {left: 38%; top: 90px; font-size: 25px; font-weight: normal;}
+	100% {left:  0%; top: 90px; font-size: 45px; font-weight: bold;}
 }
 
 .m2 {animation-name: m2;}
 @keyframes m2 {
 	0%   {left: 44.5%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
-	25%  {left: 44.5%; top: 85px; font-size: 25px; font-weight: normal;}
-	100% {left:    0%; top: 85px; font-size: 45px; font-weight: bold;}
+	25%  {left: 44.5%; top: 90px; font-size: 25px; font-weight: normal;}
+	100% {left:    0%; top: 90px; font-size: 45px; font-weight: bold;}
 }
 
 .m3 {animation-name: m3;}
 @keyframes m3 {
 	0%   {left: 53%; top: 20px; font-size: 25px; font-weight: normal; text-decoration: underline;}
-	25%  {left: 53%; top: 85px; font-size: 25px; font-weight: normal;}
-	100% {left:  0%; top: 85px; font-size: 45px; font-weight: bold;}
+	25%  {left: 53%; top: 90px; font-size: 25px; font-weight: normal;}
+	100% {left:  0%; top: 90px; font-size: 45px; font-weight: bold;}
 }
 
 .anim-button-other {
@@ -257,6 +265,15 @@ html {overflow-y: scroll;}
 	100% {top: calc(var(--sm-origin) + 4*var(--sm-width));}
 }
 
+/* main project section initial loading */
+.project-section-main {
+	animation: project-section-main 2s;
+}
+@keyframes project-section-main {
+  from { opacity: 0;}
+  to   { opacity: 1;}
+}
+
 /* about/content transition NOT USED*/
 .anim-content {
   position: relative;
@@ -271,5 +288,6 @@ html {overflow-y: scroll;}
 /* fitting for other screens */
 @media (max-width: 900px) {
   .title{display: none;}
+  .sm{display: none;}
 }
 

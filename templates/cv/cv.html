@@ -13,7 +13,7 @@
 <a class="bar-item title">nocube</a>
 <a href="..\about" class="bar-item button link-title">about</a>
 <a href="..\projects" class="bar-item button link-title">projects</a>
-<a href=".." class="bar-item button home">^</a>
+<a href=".." class="bar-item button home">&#10066;</a>
 </div>
 
 <!-- Page Title -->
@@ -24,9 +24,25 @@
 <div class="ceiling"></div>
 
 <!-- Content -->
-<div>
-<embed src="{% static 'pdfs/paper_template.pdf' %}#toolbar=0" class="cv-pdf"></embed>
-</div>
+<!-- <div> -->
+<!-- <embed src="{% static 'pdfs/paper_template.pdf' %}#toolbar=0" class="cv-pdf"></embed> -->
+<!-- </div> -->
+
+<body style="margin: 0px">
+ <div id="adobe-dc-view"></div>
+ <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+ <script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function()
+    {
+        var adobeDCView = new AdobeDC.View({clientId: "784ba73f7a8945bd83de6b1d5dd959d1", divId: "adobe-dc-view"});
+        adobeDCView.previewFile(
+       {
+          content:   {location: {url: "{% static 'pdfs/paper_template.pdf' %}"}},
+          metaData: {fileName: "paper_template.pdf
+       });
+    });
+ </script>
+</body>
 
 </body>
 </html>
