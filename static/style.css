@@ -103,12 +103,14 @@ html {overflow-y: scroll;}
 
 .cv-pdf {
 	position: absolute;
-	top: 160px;
-	padding-bottom: 160px;
+	top: 120px;
 	left: 52%;
 	transform: translate(-50%, 0%);
 	width: 55%;
-	height: 100%;
+	padding-bottom: 20px;
+	border-style: double;
+	border-width: 5px;
+	border-color: var(--text-color);
 }
 
 #project-section-python {display: none;}
