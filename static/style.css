@@ -53,22 +53,8 @@ html {overflow-y: scroll;}
 	padding: 20px;
 }
 
-.button-project {
-	border-radius: 4px;
-	width: 100%;
-	height: 55px;
-	text-align: left;
-	padding-left: 25px;
-	padding-right: 50px;
-	overflow: hidden; 
-	white-space: nowrap;	
-	text-overflow: ellipsis;
-	border: none;
-	outline: none;
-	background: var(--secondary-color);	
-}
 
-.button-project-section:hover {
+.underline-project-section:hover {
 	text-decoration: underline !important; 
 	color: var(--secondary-color);
 }
@@ -92,13 +78,27 @@ html {overflow-y: scroll;}
 	padding: 5px;
 }
 
-.dropdown-project {
+.button-project {
+	border-radius: 4px;
 	width: 100%;
-	padding: 50px;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	display: none;
+	height: 55px;
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 50px;
+	overflow: hidden; 
+	white-space: nowrap;	
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: var(--secondary-color);	
+}
+
+.dropdown-project {
+	border-radius: 3px;
+	width: 60%;
+	padding: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .cv-pdf {
@@ -114,10 +114,12 @@ html {overflow-y: scroll;}
 }
 
 #project-section-python {display: none;}
-#project-section-misc   {display: none;}
+#project-section-htmlcss {display: none;}
+#project-section-cpp {display: none;}
 
-#button-project-section-python {text-decoration: none;}
-#button-project-section-misc   {text-decoration: none;}
+#underline-project-section-python {text-decoration: none;}
+#underline-project-section-htmlcss {text-decoration: none;}
+#underline-project-section-cpp {text-decoration: none;}
 
 #arrow-planetary-orbits {
 	transform: rotate(35deg) translate(0px,-10px);
@@ -129,22 +131,36 @@ html {overflow-y: scroll;}
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
 
-#arrow-hidden-lisa {
+#arrow-donut-generation {
 	transform: rotate(135deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
 
-#planetary_orbits {
-	background-color: lightblue;
+#arrow-this-website {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
 
-#terrain_map {
-	background-color: green;
+#arrow-nothin-here {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
 
-#hidden_lisa {
-	background-color: lightblue;
-}
+.project-text {position: relative; width: 40%; left: 60%; border-style: solid; overflow: hidden;}
+#planetary_orbits {display: none; background-color: lightblue;}
+#planetary_orbits_text {display: none;}
+
+#terrain_map {display: none; background-color: lightblue;}
+#terrain_map_text {display: none;}
+
+#donut_generation {display: none; background-color: lightblue;}
+#donut_generation_text {display: none;}
+
+#this_website {display: none; background-color: lightblue;}
+#this_website_text {display: none; float:}
+
+#nothin_here {display: none; background-color: lightblue;}
+#nothin_here_text {display: none;}
 
 /* shapes */
 .background{height: 150%; width: 80%; margin-left: 10%; margin-right: 10%; top: 15px; position: fixed; z-index: -1;}
@@ -164,6 +180,7 @@ html {overflow-y: scroll;}
 .content-about{font-size: 20px; font-family: var(--font-choice);}
 .button-project{font-size: 24px; font-family: var(--font-choice);}
 .button-project-section{font-size: 34px; font-family: var(--font-choice);}
+.project-text{font-family: var(--font-choice);}
 
 
 /* colors */
@@ -183,6 +200,7 @@ html {overflow-y: scroll;}
 .page-title{color: var(--text-color);}
 .content-home{color: var(--text-color);}
 .content-about{color: var(--text-color);}
+.project-text{color: var(--text-color);}
 
 
 /* animations */

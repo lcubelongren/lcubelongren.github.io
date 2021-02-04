@@ -26,42 +26,79 @@
 <!-- Content -->
 <div class="container-project">
 
-<button id="button-project-section-python" onclick="projectsectionFunction('project-section-python','button-project-section-python')" 
-		class="button-project-section">&#9900; python</button>
+<!-- start python -->
+<button id="button-project-section-python" onclick="projectsectionFunction('project-section-python','underline-project-section-python')" 
+		class="button-project-section">&#9900; <a id="underline-project-section-python" class="underline-project-section">python</a></button>
 		
 <div id="project-section-python" class="container-project-section">
 
-<button onclick="projectFunction('planetary_orbits','arrow-planetary-orbits')" class="button-project">
+<button onclick="projectFunction('planetary_orbits','planetary_orbits_text','arrow-planetary-orbits')" class="button-project">
 <i id="arrow-planetary-orbits" class="button-arrow"></i>
 planetary orbits within the solar system
 </button>
-<div id="planetary_orbits" class ="dropdown-project">
-this is my planet
-</div>
 
-<button onclick="projectFunction('terrain_map','arrow-terrain-map')" class="button-project">
+<img id="planetary_orbits" class="dropdown-project"
+	 src="https://raw.githubusercontent.com/lcubelongren/projects-self/main/section_python/planetary_positions/output.png">
+<p id="planetary_orbits_text" class="dropdown-project project-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus mi vitae feugiat posuere. Suspendisse tempor lorem eu enim convallis hendrerit. Donec sapien est, mattis in ligula et, tincidunt porta.
+</p>
+
+<button onclick="projectFunction('terrain_map','terrain_map_text','arrow-terrain-map')" class="button-project">
 <i id="arrow-terrain-map" class="button-arrow"></i>
 terrain map of europe
 </button>
-<div id="terrain_map" class="dropdown-project">
-this is my map
-</div>
+<img id="terrain_map" class="dropdown-project"
+	 src="https://raw.githubusercontent.com/lcubelongren/projects-self/main/section_python/mapping_europe/output.gif">
+<p id="terrain_map_text" class="dropdown-project project-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus mi vitae feugiat posuere. Suspendisse tempor lorem eu enim convallis hendrerit. Donec sapien est, mattis in ligula et, tincidunt porta.
+</p>
+	 
+<button onclick="projectFunction('donut_generation','donut_generation_text','arrow-donut-generation')" class="button-project">
+<i id="arrow-donut-generation" class="button-arrow"></i>
+donut generation
+</button>
+<embed id="donut_generation" class="dropdown-project"
+	   src="https://raw.githubusercontent.com/lcubelongren/projects-self/main/section_python/generating_donuts/output.txt"></embed>
+<p id="donut_generation_text" class="dropdown-project project-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus mi vitae feugiat posuere. Suspendisse tempor lorem eu enim convallis hendrerit. Donec sapien est, mattis in ligula et, tincidunt porta.
+</p>
+
 </div>
 
 <br>
 
-<button id="button-project-section-misc" onclick="projectsectionFunction('project-section-misc','button-project-section-misc')" 
-		class="button-project-section">&#9900;  misc</button>
+<!-- start c++ -->
+<button id="button-project-section-c++" onclick="projectsectionFunction('project-section-cpp','underline-project-section-cpp')" 
+		class="button-project-section">&#9900; <a id="underline-project-section-cpp" class="underline-project-section">c++</a></button>
 		
-<div id="project-section-misc" class="container-project-section">
+<div id="project-section-cpp" class="container-project-section">
 
-<button onclick="projectFunction('hidden_lisa','arrow-hidden-lisa')" class="button-project">
-<i id="arrow-hidden-lisa" class="button-arrow"></i>
-something hidden
+<button onclick="projectFunction('nothin_here','nothin_here_text','arrow-nothin-here')" class="button-project">
+<i id="arrow-nothin-here" class="button-arrow"></i>
+nothin' here
 </button>
-<div id="hidden_lisa" class="dropdown-project">
-this is my Lisa
+<div id="nothin_here" class="dropdown-project">
+really
 </div>
+
+</div>
+
+<br>
+
+<!-- start html/css -->
+<button id="button-project-section-htmlcss" onclick="projectsectionFunction('project-section-htmlcss','underline-project-section-htmlcss')" 
+		class="button-project-section">&#9900; <a id="underline-project-section-htmlcss" class="underline-project-section">html/css</a></button>
+		
+<div id="project-section-htmlcss" class="container-project-section">
+
+<button onclick="projectFunction('this_website','this_website_text','arrow-this-website')" class="button-project">
+<i id="arrow-this-website" class="button-arrow"></i>
+this website
+</button>
+<div id="this_website" class="dropdown-project">
+welcome
+</div>
+
 </div>
 
 </div>
