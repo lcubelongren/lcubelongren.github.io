@@ -14,7 +14,7 @@ html {overflow-y: scroll;}
 
 .bar{width: 80%; margin-left: 10%; margin-right: 10%; overflow: hidden; z-index: 20;}
 .bar-item{float: left; display: inline-block; padding: 20px; white-space: normal; outline: 0; text-align: center;}
-.title{width: 50%;}
+.title{width: 50%; text-align: left; margin-left: 2%;}
 
 .sm{position: fixed; width: var(--sm-width); height: var(--sm-width); padding: 12px; border-style: solid; border-width: 4px;}
 .sm-button{position: absolute; width: var(--sm-width); height: var(--sm-width); transform: translate(-15%, -15%);}
@@ -28,7 +28,7 @@ html {overflow-y: scroll;}
 /* positions */
 .top{position: fixed; z-index: 5; top: 15px;}
 .home{float: right; text-decoration: none; padding-right: 30px; padding-left: 30px; padding-bottom: 11px;}
-.page-title{top: 90px; margin-left: 12%; float: none;}
+.page-title{top: 90px; margin-left: 13%; float: none;}
 
 .content-home{position: absolute; left: 15%; top: 90px;}
 .content-about{position: absolute; margin-left: 20%; margin-right: 20%; padding: 20px 50px 0px 50px; top: 160px;}
@@ -93,13 +93,24 @@ html {overflow-y: scroll;}
 	background: var(--secondary-color);	
 }
 
-.dropdown-project {
+.project-dropdown {
+	overflow: hidden; 
+	display: flex;
+}
+
+.dropdown-image {
 	border-radius: 3px;
 	width: 60%;
-	padding: 20px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	padding: 10px;
+	margin: 0px;
+	float: left;
 }
+
+.dropdown-text {
+	position: relative; 
+	margin: 0; 
+	padding: 1.5vw; 
+	float: right;}
 
 .cv-pdf {
 	position: absolute;
@@ -146,7 +157,6 @@ html {overflow-y: scroll;}
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
 
-.project-text {position: relative; width: 40%; left: 60%; border-style: solid; overflow: hidden;}
 #planetary_orbits {display: none; background-color: lightblue;}
 #planetary_orbits_text {display: none;}
 
@@ -172,7 +182,7 @@ html {overflow-y: scroll;}
 	--font-choice: Helvetica, "Courier New", Monaco;
 }
 
-.title{font-size: 34px; font-weight: bold; font-family: var(--font-choice);}
+.title{font-size: 34px; font-weight: none; font-family: var(--font-choice);}
 .button{font-size: 30px; font-family: var(--font-choice);}
 .home{font-size: 36px; font-weight: bold; font-family: var(--font-choice);}
 .page-title{font-size: 45px; font-weight: bold; font-family: var(--font-choice);}
@@ -180,7 +190,7 @@ html {overflow-y: scroll;}
 .content-about{font-size: 20px; font-family: var(--font-choice);}
 .button-project{font-size: 24px; font-family: var(--font-choice);}
 .button-project-section{font-size: 34px; font-family: var(--font-choice);}
-.project-text{font-family: var(--font-choice);}
+.dropdown-text{font-size: 1.75vw; font-family: var(--font-choice);}
 
 
 /* colors */
@@ -207,24 +217,24 @@ html {overflow-y: scroll;}
 /* --- */
 /* navigation bar */
 .anim-home {
-  position: relative;
-  animation-name: home;
-  animation-duration: 0.3s;
-  animation-delay: 0.1s;
-  animation-timing-function: ease;
+	position: relative;
+	animation-name: home;
+	animation-duration: 0.3s;
+	animation-delay: 0.1s;
+	animation-timing-function: ease;
 }
 
 @keyframes home {
-  0%   {left: 0px; top: 0px;}
-  50%  {left: 0px; top: -5px;}
-  100% {left: 0px; top: 0px;}
+	0%   {left: 0px; top: 0px;}
+	50%  {left: 0px; top: -5px;}
+	100% {left: 0px; top: 0px;}
 }
 
 .anim-button-main {
-  position: relative;
-  animation-duration: 0.9s;
-  animation-timing-function: cubic-bezier(0,0,0.3,1);
-  z-index: 3;
+	position: relative;
+	animation-duration: 0.9s;
+	animation-timing-function: cubic-bezier(0,0,0.3,1);
+	z-index: 3;
 }
 
 .m1 {animation-name: m1;}
@@ -249,15 +259,15 @@ html {overflow-y: scroll;}
 }
 
 .anim-button-other {
-  position: relative;
-  animation-duration: 0.9s;
-  animation-name: button-other;
-  animation-timing-function: ease-in-out;
+	position: relative;
+	animation-duration: 0.9s;
+	animation-name: button-other;
+	animation-timing-function: ease-in-out;
 }
 
 @keyframes button-other {
-  0%   {left: 9%;}
-  100% {left: 0%;}
+	0%   {left: 9%;}
+	100% {left: 0%;}
 }
 
 /* about/buttons transition */
@@ -290,15 +300,15 @@ html {overflow-y: scroll;}
 	animation: project-section-main 2s;
 }
 @keyframes project-section-main {
-  from { opacity: 0;}
-  to   { opacity: 1;}
+	from { opacity: 0;}
+	to   { opacity: 1;}
 }
 
 /* about/content transition NOT USED*/
 .anim-content {
-  position: relative;
-  animation-duration: 0.9s;
-  animation-name: anim-content;
+	position: relative;
+	animation-duration: 0.9s;
+	animation-name: anim-content;
 }
 @keyframes anim-content {
 	0%   {top: 800px;}
@@ -306,8 +316,12 @@ html {overflow-y: scroll;}
 }
 
 /* fitting for other screens */
-@media (max-width: 900px) {
-  .title{display: none;}
-  .sm{display: none;}
+@media (max-width: 1150px) {
+	.title{display: none;}
+	.sm{display: none;}
+}
+
+@media (max-width: 600px) {
+	.home{display: none;}
 }
 
