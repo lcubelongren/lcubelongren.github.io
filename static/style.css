@@ -1,6 +1,6 @@
 ﻿
 html {box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-html {overflow-y: scroll;}
+html {overflow-y: scroll; overflow-x: hidden;}
 
 /* git.io/normalize */
 @import '~@csstools/normalize.css';

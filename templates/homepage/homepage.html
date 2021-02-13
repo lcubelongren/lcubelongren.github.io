@@ -26,8 +26,79 @@
 </div>
 
 <!-- Design -->
-<div>
+<style>
+:root  {
+	--a: -50%;
+	--b: -50%;
+	--x: 20vw;
+	--y: 10vw;
+	
+	--lw: 150%;
+	
+	--rot: 0deg;
+}
 
+.container  {
+	position: absolute;
+	width: 0;
+	left: 40%;
+	top: 60%;
+	
+	transform: rotate(var(--rot));
+}
+
+.box  {
+	top: 50%;
+	left: 50%;
+}
+
+.outer  {
+	outline-style: dashed;
+	outline-color: var(--text-color);
+	width: var(--x);
+	height: var(--x);
+	overflow: hidden;
+	transform: translate(-50%,-50%);
+}
+
+.center  {
+	position: relative;
+	outline-style: solid;
+	outline-color: var(--text-color);
+	background-color: var(--secondary-color);
+	width: var(--y);
+	height: var(--y);
+	
+	transform: translate(var(--a),var(--b));
+}
+
+.lines  {
+	position: relative;
+	outline-style: solid;
+	outline-color: var(--secondary-color);
+	width: var(--lw);
+	
+	transform: rotate(var(--theta));
+}
+
+#top-left      {transform: rotate(var(--theta1)); top: 0%;   left: -75%;}
+#top-right     {transform: rotate(var(--theta2)); top: 0%;   left: 25%;}
+#bottom-left   {transform: rotate(var(--theta3)); top: 100%; left: -75%;}
+#bottom-right  {transform: rotate(var(--theta4)); top: 100%; left: 25%;}
+</style>
+
+<script>
+homeAnim();
+</script>
+
+<div class="container anim">
+	<div class="box outer">
+		<div class="lines" id="top-left"></div>
+		<div class="lines" id="top-right"></div>
+		<div class="lines" id="bottom-left"></div>
+		<div class="lines" id="bottom-right"></div>
+		<div class="box center"></div>
+	</div>
 </div>
 
 </body>
