@@ -114,7 +114,8 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	position: relative; 
 	margin: 0; 
 	padding: 1.5vw; 
-	float: right;}
+	float: right;
+}
 
 .cv-pdf {
 	position: absolute;
@@ -181,7 +182,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 .content-about{font-size: 20px; font-family: var(--font-choice);}
 .button-project{font-size: 24px; font-family: var(--font-choice);}
 .button-project-section{font-size: 34px; font-family: var(--font-choice);}
-.dropdown-text{font-size: 1.75vw; font-family: var(--font-choice);}
+.dropdown-text{font-size: 1.5vw; font-family: var(--font-choice); line-height: 130%;}
 
 
 /* colors */
@@ -202,7 +203,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 .content-home{color: var(--text-color);}
 .content-about{color: var(--text-color);}
 .project-text{color: var(--text-color);}
-
+.dropdown-text{color: var(--text-color);}
 
 /* animations */
 /* --- */

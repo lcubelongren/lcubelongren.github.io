@@ -1,6 +1,7 @@
 
 /* project function */
 /* this opens more information for an individual project id */
+/* as in, the drop down buttons and their arrows */
 
 function projectsectionFunction(id,butt_id) {
   var x = document.getElementById(id);
@@ -28,6 +29,23 @@ function projectFunction(id,text_id,arrow_id) {
 	xtext.style.display = "block";
 	arrow.style.transform = "rotate(45deg) translate(5px,5px)";
   }
+}
+
+/* load a text file from a URL location */
+/* set innerHTML based upon id */
+
+function getText(url,id){
+    var request = new XMLHttpRequest();
+    request.open('GET', url, true);
+    request.send(null);
+    request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status === 200) {
+            var type = request.getResponseHeader('Content-Type');
+            if (type.indexOf("text") !== 1) {
+				document.getElementById(id).innerHTML = request.responseText;
+            }
+        }
+    }
 }
 
 /* homepage animation stuff */
