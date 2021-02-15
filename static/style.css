@@ -12,7 +12,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 --sm-width: 80px;
 }
 
-.bar{width: 80%; margin-left: 10%; margin-right: 10%; overflow: hidden; z-index: 20;}
+.bar{width: 80%; margin-left: 10%; margin-right: 10%; overflow: hidden; z-index: 20; border-bottom: 5px solid var(--background-color);}
 .bar-item{float: left; display: inline-block; padding: 20px; white-space: normal; outline: 0; text-align: center;}
 .title{width: 50%; text-align: left; margin-left: 2%;}
 
@@ -27,7 +27,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 
 /* positions */
 .top{position: fixed; z-index: 5; top: 15px;}
-.home{float: right; text-decoration: none; padding-right: 30px; padding-left: 30px; padding-bottom: 11px;}
+.home{float: right; text-decoration: none; padding-right: 30px; padding-left: 30px; padding-bottom: 12px;}
 .page-title{top: 90px; margin-left: 13%; float: none;}
 
 .content-home{position: absolute; left: 15%; top: 90px;}
@@ -91,6 +91,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	border: none;
 	outline: none;
 	background: var(--secondary-color);	
+	border-bottom: solid 4px var(--background-color);
 }
 
 .project-dropdown {
@@ -99,9 +100,12 @@ html {overflow-y: scroll; overflow-x: hidden;}
 }
 
 .dropdown-image {
-	border-radius: 3px;
+	background-color: var(--secondary-color);
+	border-style: double;
+	border-width: 10px;
+	border-radius: 5px;
 	width: 60%;
-	padding: 10px;
+	padding: 5px;
 	margin: 0px;
 	float: left;
 }
@@ -120,58 +124,44 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	width: 55%;
 	height: calc(100% - 120px);
 	padding-bottom: 0px;
-	border-style: double;
-	border-width: 5px;
-	border-color: var(--text-color);
+	border: solid 2px var(--background-color);
 }
 
+/* ids section: python */
 #project-section-python {display: none;}
-#project-section-htmlcss {display: none;}
-#project-section-cpp {display: none;}
-
 #underline-project-section-python {text-decoration: none;}
-#underline-project-section-htmlcss {text-decoration: none;}
-#underline-project-section-cpp {text-decoration: none;}
 
 #arrow-planetary-orbits {
 	transform: rotate(35deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
+#planetary_orbits {display: none;}
+#planetary_orbits_text {display: none;}
 
 #arrow-terrain-map {
 	transform: rotate(135deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
+#terrain_map {display: none;}
+#terrain_map_text {display: none;}
 
 #arrow-donut-generation {
 	transform: rotate(135deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
-
-#arrow-this-website {
-	transform: rotate(135deg) translate(0px,-10px);
-	-webkit-transform: rotate(135deg) translate(0px,-10px);
-}
-
-#arrow-nothin-here {
-	transform: rotate(135deg) translate(0px,-10px);
-	-webkit-transform: rotate(135deg) translate(0px,-10px);
-}
-
-#planetary_orbits {display: none; background-color: lightblue;}
-#planetary_orbits_text {display: none;}
-
-#terrain_map {display: none; background-color: lightblue;}
-#terrain_map_text {display: none;}
-
-#donut_generation {display: none; background-color: lightblue;}
+#donut_generation {display: none;}
 #donut_generation_text {display: none;}
 
-#this_website {display: none; background-color: lightblue;}
-#this_website_text {display: none; float:}
+/* ids section: dhtml */
+#project-section-dhtml {display: none;}
+#underline-project-section-dhtml {text-decoration: none;}
 
-#nothin_here {display: none; background-color: lightblue;}
-#nothin_here_text {display: none;}
+#arrow-this-website {
+	transform: rotate(45deg) translate(5px,5px);
+	-webkit-transform: rotate(45deg) translate(5px,5px);
+}
+#this_website {display: none;}
+#this_website_text {display: none;}
 
 /* shapes */
 .background{height: 150%; width: 80%; margin-left: 10%; margin-right: 10%; top: 15px; position: fixed; z-index: -1;}
