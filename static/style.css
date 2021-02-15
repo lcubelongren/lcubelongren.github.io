@@ -118,7 +118,8 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	left: 52%;
 	transform: translate(-50%, 0%);
 	width: 55%;
-	padding-bottom: 20px;
+	height: calc(100% - 120px);
+	padding-bottom: 0px;
 	border-style: double;
 	border-width: 5px;
 	border-color: var(--text-color);
