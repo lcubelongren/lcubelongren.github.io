@@ -153,6 +153,13 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #donut_generation {display: none;}
 #donut_generation_text {display: none;}
 
+#arrow-solving-kniffel {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#solving_kniffel {display: none;}
+#solving_kniffel_text {display: none;}
+
 /* ids section: dhtml */
 #project-section-dhtml {display: none;}
 #underline-project-section-dhtml {text-decoration: none;}
