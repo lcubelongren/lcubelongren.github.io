@@ -322,5 +322,6 @@ html {overflow-y: scroll; overflow-x: hidden;}
 
 @media (max-width: 600px) {
 	.home{display: none;}
+	.content-home{display: none;}
 }
 

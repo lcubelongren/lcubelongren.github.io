@@ -97,10 +97,10 @@ function homeAnim() {
 		} else {
 			i++;
 			
-			var a = 50 + Math.sin(i/50) * 15;
+			var a = 50 + Math.sin(i/50) * 10;
 			var b = a;
 			var x = 20;
-			var y = 10 + Math.sin(i/50) * 2;
+			var y = 13; //+ Math.sin(i/50) * 2;
 			
 			var rot = Math.cos(i/50) * 20 + i/10;
 			

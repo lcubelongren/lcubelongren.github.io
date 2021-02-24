@@ -42,7 +42,7 @@
 	position: absolute;
 	width: 0;
 	left: 40%;
-	top: 60%;
+	top: 50%;
 	
 	transform: rotate(var(--rot));
 }
@@ -53,8 +53,7 @@
 }
 
 .outer  {
-	outline-style: dashed;
-	outline-color: var(--text-color);
+	outline: dashed var(--text-color);
 	width: var(--x);
 	height: var(--x);
 	overflow: hidden;
@@ -63,8 +62,7 @@
 
 .center  {
 	position: relative;
-	outline-style: solid;
-	outline-color: var(--text-color);
+	outline: solid var(--text-color);
 	background-color: var(--secondary-color);
 	width: var(--y);
 	height: var(--y);
