@@ -23,4 +23,5 @@ urlpatterns = [
     path('about/', include('pages.about.urls')),
     path('projects/', include('pages.projects.urls')),
     path('cv/', include('pages.cv.urls')),
+    path('regional_airlines/', include('pages.other.urls'))
 ]
