@@ -53,6 +53,13 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	padding: 20px;
 }
 
+.project-highlight {
+	border-style: solid;
+	border-color: var(--background-color);
+	border-width: 4px;
+	border-radius: 10px;
+	padding: 15px 15% 15px 15%;
+}
 
 .underline-project-section:hover {
 	text-decoration: underline !important; 
@@ -160,6 +167,13 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #solving_kniffel {display: none;}
 #solving_kniffel_text {display: none;}
 
+#arrow-regional-airline {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#regional_airline {display: none;}
+#regional_airline_text {display: none;}
+
 /* ids section: dhtml */
 #project-section-dhtml {display: none;}
 #underline-project-section-dhtml {text-decoration: none;}
@@ -190,6 +204,8 @@ html {overflow-y: scroll; overflow-x: hidden;}
 .button-project{font-size: 24px; font-family: var(--font-choice);}
 .button-project-section{font-size: 34px; font-family: var(--font-choice);}
 .dropdown-text{font-size: 1.5vw; font-family: var(--font-choice); line-height: 130%;}
+.project-highlight{font-size: 24px; font-family: var(--font-choice); line-height: 160%;}
+.project-text {font-size: 22px; font-family: var(--font-choice);}
 
 
 /* colors */

@@ -26,21 +26,53 @@
 <!-- Content -->
 <div class="container-project">
 
+<!-- start highlight -->
+<div class="project-highlight">
+<b>Highlight:</b><br>
+<a href="https://www.nocu.be/regional_airlines/">Map of Regional Airline Flight Locations in North America</a>
+</div>
+<br>
+
+<p class="project-text">Choose a section:</p>
+
 <!-- start python -->
 <button id="button-project-section-python" onclick="projectsectionFunction('project-section-python','underline-project-section-python')" 
 		class="button-project-section">&#9900; <a id="underline-project-section-python" class="underline-project-section">python</a></button>
 		
 <div id="project-section-python" class="container-project-section">
 
+
+<button onclick="projectFunction('regional_airline','regional_airline_text','arrow-regional-airline')" class="button-project">
+<i id="arrow-regional-airline" class="button-arrow"></i>
+regional airline map
+</button>
+
+<div class="project-dropdown">
+<img id="regional_airline" class="dropdown-image"
+	 src="https://raw.githubusercontent.com/lcubelongren/projects-self/main/section_python/regional_airlines/output.png">
+<p id="regional_airline_text" class="dropdown-text">
+The dataset consists of origin/destination pairs for a majority of the regional airlines in the United States.<br>
+It is sourced from the Bureau of Transportation Statistics, where they sample 10% of all flights that originate or end domestically.<br>
+<br>
+Plotting is done using the Plotly package for Python.<br>
+<br>
+link: 
+<a href="https://www.nocu.be/regional_airlines/">map</a>, 
+<a href="https://github.com/lcubelongren/projects-self/tree/main/section_python/regional_airlines">project repo</a>
+</p>
+</div>
+
 <button onclick="projectFunction('solving_kniffel','solving_kniffel_text','arrow-solving-kniffel')" class="button-project">
-<i id="arrow-terrain-map" class="button-arrow"></i>
+<i id="arrow-solving-kniffel" class="button-arrow"></i>
 solving kniffel aka yahtzee
 </button>
 
 <div class="project-dropdown">
 <a id="solving_kniffel" class="dropdown-image" style="text-align: center; border-color: var(--background-color);"
    href="https://github.com/lcubelongren/projects-self/blob/main/section_python/solving_kniffel/players/single_player/dist/player_human.exe?raw=true">
-click to download .exe
+<br>
+click to download .exe<br>
+(for Windows)
 </a>
 <p id="solving_kniffel_text" class="dropdown-text">
 Play a single player game of Kniffel, the German version of Yahtzee, in your cmd! (they're identical)<br>
@@ -48,9 +80,9 @@ Play a single player game of Kniffel, the German version of Yahtzee, in your cmd
 The aim of the game is to generate certain pairs and obtain the most points.<br>
 <br>
 Examples -- must be typed exactly <br>
-Replace dice: 4 3 6 (or leave it blank)<br>
-Choose a box: three_of_a_kind<br>
-Leave the game: quit<br>
+Replace dice: <em>4 3 6 (or leave it blank for none)</em><br>
+Choose a box: <em>three_of_a_kind</em><br>
+Leave the game: <em>quit</em><br>
 <br>
 
 link: <a href="https://github.com/lcubelongren/projects-self/tree/main/section_python/solving_kniffel">project repo</a>
@@ -119,6 +151,7 @@ link: <a href="https://github.com/lcubelongren/projects-self/tree/main/section_p
 		class="button-project-section">&#9900; <a id="underline-project-section-dhtml" class="underline-project-section">dhtml</a></button>
 		
 <div id="project-section-dhtml" class="container-project-section">
+
 
 <button onclick="location.href='http://nocu.be'" type="button" class="button-project">
 <i id="arrow-this-website" class="button-arrow"></i>
