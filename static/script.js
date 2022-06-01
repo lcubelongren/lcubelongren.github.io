@@ -76,7 +76,7 @@ function invTan() {
 	var arg2 = ((x/2) + b*y) / ((x/2) - a*y - y);
 	var arg3 = ((x/2) - b*y - y) / ((x/2) + a*y);
 	var arg4 = ((x/2) - b*y - y) / ((x/2) - a*y - y);
-	const theta1 = angleDeg(arg1);       // good
+	const theta1 = angleDeg(arg1);
 	const theta2 = 180 - angleDeg(arg2);
 	const theta3 = 180 - angleDeg(arg3);
 	const theta4 = angleDeg(arg4);

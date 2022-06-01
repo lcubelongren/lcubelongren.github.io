@@ -330,6 +330,15 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	100% {top: 120px;}
 }
 
+/* desktop viewing notice NOT USED*/
+.notice-desktop {
+	font-size: 100px;
+	color: red;
+	width: 80%; 
+	margin-left: 10%; 
+	margin-right: 10%;
+}
+
 /* fitting for other screens */
 @media (max-width: 1150px) {
 	.title{display: none;}
