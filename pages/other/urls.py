@@ -5,4 +5,5 @@ from . import views
 app_name = 'other'
 urlpatterns = [
     path('', views.regional_airlines, name="regional_airlines"),
+    path('', views.birthday_song, name="birthday_song"),
 ]

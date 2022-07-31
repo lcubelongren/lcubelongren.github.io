@@ -10,4 +10,9 @@ def regional_airlines(request):
     context = {}
     return HttpResponse(template.render(context, request))
     
+def birthday_song(request):
+    template = loader.get_template('other/birthday_song.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+    
     
