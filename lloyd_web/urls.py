@@ -24,6 +24,6 @@ urlpatterns = [
     path('projects/', include('pages.projects.urls')),
     path('cv/', include('pages.cv.urls')),
     
-    path('regional_airlines/', include('pages.other.urls'))
-    path('birthday_song/', include('pages.other.urls'))
+    path('other/regional_airlines/', include('pages.other.urls1')),
+    path('other/birthday_song/', include('pages.other.urls2')),
 ]
