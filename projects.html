@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>nocube</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/style.css">
+<script src="static/script.js"></script>
+<body class="page">
+
+<!-- Navigation -->
+<div class="bar top black">
+<a class="bar-item title">nocube</a>
+<a href="about.html" class="bar-item button">about</a>
+<a href="photos.html" class="bar-item button">photos</a>
+<a href="homepage.html" class="bar-item button home">&#10066;</a>
+</div>
+
+<!-- Page Title -->
+<a class="bar-item page-title anim-button-main m2">projects</a>
+
+<!-- Background -->
+<div class="background"></div>
+<div class="ceiling"></div>
+
+<!-- Content -->
+<div class="container-project">
+
+<!-- start Newsletters -->
+<button id="button-project-section-newsletters" onclick="projectsectionFunction('project-section-newsletters','underline-project-section-newsletters')" 
+		class="button-project-section">&#9900; <a id="underline-project-section-newsletters" class="underline-project-section">Newsletters</a></button>
+<div id="project-section-newsletters" class="container-project-section">
+<a href="static/projects/newsletters/Antarctic_Newsletter_09.html" class="project-link" target="_blank">Antarctic Newsletter #09 - 09.11.2023</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_08.html" class="project-link" target="_blank">Antarctic Newsletter #08 - 02.08.2023</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_07.html" class="project-link" target="_blank">Antarctic Newsletter #07 - 13.02.2023</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_06.html" class="project-link" target="_blank">Antarctic Newsletter #06 - 06.02.2023</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_05.html" class="project-link" target="_blank">Antarctic Newsletter #05 - 23.01.2023</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_04.html" class="project-link" target="_blank">Antarctic Newsletter #04 - 31.12.2022</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_03.html" class="project-link" target="_blank">Antarctic Newsletter #03 - 05.12.2022</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_02.html" class="project-link" target="_blank">Antarctic Newsletter #02 - 14.11.2022</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_01.html" class="project-link" target="_blank">Antarctic Newsletter #01 - 24.10.2022</a>
+<a href="static/projects/newsletters/Antarctic_Newsletter_00.html" class="project-link" target="_blank">Antarctic Newsletter #00 - 10.10.2022</a>
+</div>
+
+<br>
+
+<!-- start Maps -->
+<button id="button-project-section-maps" onclick="projectsectionFunction('project-section-maps','underline-project-section-maps')" 
+		class="button-project-section">&#9900; <a id="underline-project-section-maps" class="underline-project-section">Maps</a></button>
+<div id="project-section-maps" class="container-project-section">
+
+
+<button onclick="projectFunction('antarctictransportation','antarctictransportation_text','arrow-antarctictransportation')" class="button-project">
+<i id="arrow-antarctictransportation" class="button-arrow"></i>
+USAP Antarctic Transportation
+</button>
+<div class="project-dropdown">
+<img id="antarctictransportation" class="dropdown-image"
+	 src="static/projects/maps/antarctic_still_end.png">
+<p id="antarctictransportation_text" class="dropdown-text">
+link: 
+<a href="https://youtu.be/pgKQlsTSBd8" target="_blank">youtube</a>
+</p>
+</div>
+
+<button onclick="projectFunction('regionalairline','regionalairline_text','arrow-regionalairline')" class="button-project">
+<i id="arrow-regionalairline" class="button-arrow"></i>
+US Regional Airline Destinations
+</button>
+<div class="project-dropdown">
+<img id="regionalairline" class="dropdown-image"
+	 src="https://raw.githubusercontent.com/lcubelongren/projects-self/main/section_python/regional_airlines/output.png">
+<p id="regionalairline_text" class="dropdown-text">
+The dataset consists of origin/destination pairs for a majority of the regional airlines in the United States.<br>
+It is sourced from the Bureau of Transportation Statistics, where they sample 10% of all flights that originate or end domestically.<br>
+<br>
+Plotting is done using the Plotly package for Python.<br>
+<br>
+link:
+<a href="other/regional_airlines.html" target="_blank">map</a>, 
+<a href="https://github.com/lcubelongren/projects-self/tree/main/section_python/regional_airlines" target="_blank">project repo</a>
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>
