@@ -147,6 +147,14 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	object-fit: cover;
 }
 
+.project-section {
+	position: relative; 
+	margin: 0; 
+	padding: 1.5vw;
+	padding-left: 5.0vw;
+	float: left;
+}
+
 /* ids section: newsletters */
 #project-section-newsletters {display: none;}
 #underline-project-section-newsletters {text-decoration: none;}
@@ -176,6 +184,17 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #antarctictransportation {display: none;}
 #antarctictransportation_text {display: none;}
 
+/* ids section: movies */
+#project-section-movies {display: none;}
+#underline-project-section-movies {text-decoration: none;}
+
+#arrow-antarcticscenery {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#antarcticscenery {display: none;}
+#antarcticscenery_text {display: none;}
+
 /* shapes */
 .background{height: 150%; width: 80%; margin-left: 10%; margin-right: 10%; top: 15px; position: fixed; z-index: -1;}
 .ceiling{height: 15px; width: 80%; margin-left: 10%; margin-right: 10%; top: 0px; position: fixed; z-index: 101;}
@@ -196,6 +215,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 .button-project-section{font-size: 34px; font-family: var(--font-choice);}
 .dropdown-text{font-size: 1.5vw; font-family: var(--font-choice); line-height: 130%;}
 .project-highlight{font-size: 24px; font-family: var(--font-choice); line-height: 160%;}
+.project-section{font-size: 22px; font-family: var(--font-choice);}
 .project-text{font-size: 22px; font-family: var(--font-choice);}
 .project-link{font-size: 22px; font-family: var(--font-choice);}
 
