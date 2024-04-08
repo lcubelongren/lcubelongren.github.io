@@ -15,10 +15,11 @@ html {overflow-y: scroll; overflow-x: hidden;}
 .sm{position: fixed; width: var(--sm-width); height: var(--sm-width); padding: 12px; border-style: solid; border-width: 4px;}
 .sm-button{position: absolute; width: var(--sm-width); height: var(--sm-width); transform: translate(-15%, -15%);}
 .sm:hover{opacity: 0.7;}
-.github{left: 80%; top: calc(var(--sm-origin) + var(--sm-width));}
-.steam{left: 80%; top: calc(var(--sm-origin) + 2*var(--sm-width));}
-.lichess{left: 80%; top: calc(var(--sm-origin) + 3*var(--sm-width));}
-.instagram{left: 80%; top: calc(var(--sm-origin) + 4*var(--sm-width));}
+.github{left: 80%; top: calc(var(--sm-origin) + 1*var(--sm-width));}
+.googlescholar{left: 80%; top: calc(var(--sm-origin) + 2*var(--sm-width));}
+.steam{left: 80%; top: calc(var(--sm-origin) + 3*var(--sm-width));}
+.lichess{left: 80%; top: calc(var(--sm-origin) + 4*var(--sm-width));}
+.instagram{left: 80%; top: calc(var(--sm-origin) + 5*var(--sm-width));}
 
 
 /* positions */
@@ -340,6 +341,12 @@ html {overflow-y: scroll; overflow-x: hidden;}
 @keyframes si4 {
 	0%   {top: 150%;}
 	100% {top: calc(var(--sm-origin) + 4*var(--sm-width));}
+}
+
+.si5{animation-duration: 0.9s; animation-name: si5;}
+@keyframes si5 {
+	0%   {top: 150%;}
+	100% {top: calc(var(--sm-origin) + 5*var(--sm-width));}
 }
 
 /* main project section initial loading */
