@@ -164,6 +164,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	transform: translate(-43%, 110px);
 	font-size: 22px;
 	font-weight: bold;
+	font-family: var(--font-choice);
 }
 
 .project-section {
@@ -187,6 +188,11 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	height: 80%;
 	top: 160px;
 	background: var(--page-color);
+}
+
+.home-footer {
+	position: fixed; margin: 0; bottom: 1vh; margin-left: 90.2%; writing-mode: vertical-rl;
+	font-size: 18px; font-family: var(--font-choice); color: var(--secondary-color);
 }
 
 /* ids section: newsletters */
