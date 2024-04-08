@@ -399,7 +399,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 	.sm{display: none;}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
 	.home{display: none;}
 	.content-home{display: none;}
 }
