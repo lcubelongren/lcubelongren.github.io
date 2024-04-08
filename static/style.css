@@ -211,6 +211,10 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #regionalairline {display: none;}
 #regionalairline_text {display: none;}
 
+/* ids section: movies */
+#project-section-movies {display: none;}
+#underline-project-section-movies {text-decoration: none;}
+
 #arrow-antarctictransportation {
 	transform: rotate(135deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
@@ -218,16 +222,19 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #antarctictransportation {display: none;}
 #antarctictransportation_text {display: none;}
 
-/* ids section: movies */
-#project-section-movies {display: none;}
-#underline-project-section-movies {text-decoration: none;}
-
 #arrow-antarcticscenery {
 	transform: rotate(135deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
 }
 #antarcticscenery {display: none;}
 #antarcticscenery_text {display: none;}
+
+#arrow-motionsunmoon {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#motionsunmoon {display: none;}
+#motionsunmoon_text {display: none;}
 
 /* shapes */
 .background{height: 150%; width: 80%; margin-left: 10%; margin-right: 10%; top: 15px; position: fixed; z-index: -1;}
