@@ -28,7 +28,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 .home{float: right; text-decoration: none; padding-right: 30px; padding-left: 30px; padding-bottom: 12px;}
 .page-title{top: 90px; margin-left: 13%; float: none;}
 
-.content-home{position: absolute; left: 15%; top: 90px;}
+.content-home{position: absolute; left: 16vw; top: 30px;}
 .content-about{position: absolute; margin-left: 20%; margin-right: 20%; padding: 20px 50px 0px 50px;}
 
 .design-home{position: absolute; left: 15%; bottom: 5%;}
@@ -254,10 +254,10 @@ html {overflow-y: scroll; overflow-x: hidden;}
 }
 
 .title{font-size: 34px; font-weight: none; font-family: var(--font-choice);}
-.button{font-size: 30px; font-family: var(--font-choice);}
+.button{font-size: 28px; font-family: var(--font-choice);}
 .home{font-size: 36px; font-weight: bold; font-family: var(--font-choice);}
 .page-title{font-size: 45px; font-weight: bold; font-family: var(--font-choice);}
-.content-home{font-size: 28px; font-family: var(--font-choice);}
+.content-home{font-size: 26px; font-family: var(--font-choice);}
 .content-about{font-size: 20px; font-family: var(--font-choice);}
 .button-project{font-size: 24px; font-family: var(--font-choice);}
 .button-project-section{font-size: 34px; font-family: var(--font-choice);}
@@ -414,12 +414,15 @@ html {overflow-y: scroll; overflow-x: hidden;}
 }
 
 /* fitting for other screens */
-@media (max-width: 1150px) {
+@media (max-width: 1275px) {
 	.title{display: none;}
 	.sm{display: none;}
 }
 
-@media (max-width: 620px) {
+@media (max-width: 600px) {
 	.home{display: none;}
-	.content-home{display: none;}
+}
+
+@media (max-width: 465px) {
+	.content-home{top: 120px; font-size: 20px;}
 }
