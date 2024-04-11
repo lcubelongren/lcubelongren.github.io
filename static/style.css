@@ -20,6 +20,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 .steam{left: 80%; top: calc(var(--sm-origin) + 3*var(--sm-width));}
 .lichess{left: 80%; top: calc(var(--sm-origin) + 4*var(--sm-width));}
 .instagram{left: 80%; top: calc(var(--sm-origin) + 5*var(--sm-width));}
+.youtube{left: 80%; top: calc(var(--sm-origin) + 6*var(--sm-width));}
 
 
 /* positions */
@@ -264,7 +265,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 .project-highlight{font-size: 24px; font-family: var(--font-choice); line-height: 160%;}
 .project-section{font-size: 22px; font-family: var(--font-choice);}
 .project-text{font-size: 22px; font-family: var(--font-choice);}
-.project-link{font-size: 22px; font-family: var(--font-choice);}
+.project-link{font-family: var(--font-choice);}
 
 
 /* colors */
@@ -375,6 +376,12 @@ html {overflow-y: scroll; overflow-x: hidden;}
 @keyframes si5 {
 	0%   {top: 150%;}
 	100% {top: calc(var(--sm-origin) + 5*var(--sm-width));}
+}
+
+.si6{animation-duration: 0.9s; animation-name: si6;}
+@keyframes si6 {
+	0%   {top: 150%;}
+	100% {top: calc(var(--sm-origin) + 6*var(--sm-width));}
 }
 
 /* main project section initial loading */
