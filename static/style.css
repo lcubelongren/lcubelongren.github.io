@@ -200,13 +200,6 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #project-section-newsletters {display: none;}
 #underline-project-section-newsletters {text-decoration: none;}
 
-#arrow-regionalairline {
-	transform: rotate(135deg) translate(0px,-10px);
-	-webkit-transform: rotate(135deg) translate(0px,-10px);
-}
-#regionalairline {display: none;}
-#regionalairline_text {display: none;}
-
 /* ids section: maps */
 #project-section-maps {display: none;}
 #underline-project-section-maps {text-decoration: none;}
@@ -217,6 +210,13 @@ html {overflow-y: scroll; overflow-x: hidden;}
 }
 #regionalairline {display: none;}
 #regionalairline_text {display: none;}
+
+#arrow-whereivebeen {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#whereivebeen {display: none;}
+#whereivebeen_text {display: none;}
 
 /* ids section: movies */
 #project-section-movies {display: none;}
