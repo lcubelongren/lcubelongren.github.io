@@ -193,7 +193,7 @@ html {overflow-y: scroll; overflow-x: hidden;}
 
 .home-footer {
 	position: fixed; margin: 0; bottom: 1vh; margin-left: 90.2%; writing-mode: vertical-rl;
-	font-size: 18px; font-family: var(--font-choice); color: var(--secondary-color);
+	font-size: 18px; font-family: var(--font-choice);
 }
 
 /* ids section: newsletters */
