@@ -114,3 +114,16 @@ function homeAnim() {
 		}
 	}
 }
+
+/* image slideshow */
+
+function emphImage(img) {
+	if (img.className == "photo-gallery-img1") {
+		img.className = "photo-gallery-img2";
+		document.getElementById("background-layer").style.zIndex = 7;
+	}
+	else if (img.className == "photo-gallery-img2") {
+		img.className = "photo-gallery-img1";
+		document.getElementById("background-layer").style.zIndex = 0;
+	}
+}
