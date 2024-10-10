@@ -231,6 +231,13 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #whereivebeen {display: none;}
 #whereivebeen_text {display: none;}
 
+#arrow-whereiveflown {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#whereiveflown {display: none;}
+#whereiveflown_text {display: none;}
+
 #arrow-antarcticstations {
 	transform: rotate(135deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
