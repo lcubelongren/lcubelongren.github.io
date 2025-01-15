@@ -245,6 +245,13 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #antarcticstations {display: none;}
 #antarcticstations_text {display: none;}
 
+#arrow-airlinedestinations {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#airlinedestinations {display: none;}
+#airlinedestinations_text {display: none;}
+
 /* ids section: movies */
 #project-section-movies {display: none;}
 #underline-project-section-movies {text-decoration: none;}
