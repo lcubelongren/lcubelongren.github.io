@@ -1,4 +1,27 @@
 
+/* scroll to anchor from URL (for Projects page, currently) */
+/* format #1: baseURL + #section */
+/* format #2: baseURL + #section-project */
+
+document.onreadystatechange = function() {
+	if (document.readyState == 'interactive') {
+		let URL = window.location.href.split('#');
+		if (URL.length > 1) {
+			let target = URL.slice(-1)[0].split('-');
+			section = target[0];
+			projectsectionFunction('project-section-' + section, 'underline-project-section-' + section);
+			if (target.length == 2) {
+				project = target[1];
+				projectFunction(project, project + '_text', 'arrow-' + project);
+			}
+			//document.getElementById('project-section-' + section).scrollIntoView();
+//			let scroll_length = 0;
+//			scroll_length += document.getElementById('project-section-' + section).offsetHeight;
+//			window.scroll({top: scroll_length, behavior: 'smooth'});
+		}
+	}
+}
+
 /* project function */
 /* this opens more information for an individual project id */
 /* as in, the drop down buttons and their arrows */
