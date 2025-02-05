@@ -304,6 +304,18 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #orbitsgame {display: none;}
 #orbitsgame_text {display: none;}
 
+/* ids section: visuals */
+#project-section-visuals {display: none;}
+#underline-project-section-visuals {text-decoration: none;}
+
+#arrow-rollingdice {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#rollingdice {display: none;}
+#rollingdice_text {display: none;}
+
+
 /* shapes */
 .background{height: 150%; width: 80%; margin-left: 10%; margin-right: 10%; top: 15px; position: fixed; z-index: -1;}
 .ceiling{height: 15px; width: 80%; margin-left: 10%; margin-right: 10%; top: 0px; position: fixed; z-index: 101;}
