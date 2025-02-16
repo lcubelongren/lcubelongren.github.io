@@ -283,6 +283,13 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #project-section-games {display: none;}
 #underline-project-section-games {text-decoration: none;}
 
+#arrow-railroadgame {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#railroadgame {display: none;}
+#railroadgame_text {display: none;}
+
 #arrow-cellularautomata {
 	transform: rotate(135deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
