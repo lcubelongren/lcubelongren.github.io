@@ -315,6 +315,13 @@ html {overflow-y: scroll; overflow-x: hidden;}
 #project-section-visuals {display: none;}
 #underline-project-section-visuals {text-decoration: none;}
 
+#arrow-airplanemanufacturing {
+	transform: rotate(135deg) translate(0px,-10px);
+	-webkit-transform: rotate(135deg) translate(0px,-10px);
+}
+#airplanemanufacturing {display: none;}
+#airplanemanufacturing_text {display: none;}
+
 #arrow-co2prediction {
 	transform: rotate(135deg) translate(0px,-10px);
 	-webkit-transform: rotate(135deg) translate(0px,-10px);
