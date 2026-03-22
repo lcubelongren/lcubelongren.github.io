@@ -45,7 +45,7 @@ function displayNewsletter() {
     const searchParams = new URLSearchParams();
     const newsletter = url.searchParams.get('n');
     if (newsletter) {
-        let url = 'static/projects/newsletters/' + newsletter + '.html';
+        let url = 'static/newsletters/' + newsletter + '.html';
         fetch(url)
         .then(response => {
             return response.text();
@@ -54,7 +54,7 @@ function displayNewsletter() {
             var parser = new DOMParser();
             var doc = parser.parseFromString(newsletterHTML, 'text/html');
             doc.querySelectorAll('img').forEach(img => {
-                img.src = 'static/projects/newsletters/' + img.getAttribute('src');
+                img.src = 'static/newsletters/' + img.getAttribute('src');
             });
             let newsletterPage = document.createElement('div');
             newsletterPage.id = 'newsletter-page';
