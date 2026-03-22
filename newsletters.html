@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Luke Longren</title>
+<link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href="static/style.css">
+<script src="static/script.js"></script>
+<body class="page">
+
+<!-- Background -->
+<div class="background"></div>
+<div class="ceiling"></div>
+
+<!-- Content -->
+<div class="content">
+<span class="title">Luke <b>Longren</b> &ndash; newsletters</span><br>
+<hr class="title-line" />
+<div id="newsletter-list">
+<div class="newsletter-section">Chronological</div>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_11">Antarctic Newsletter #11 - 01.03.2026</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Colorado_Newsletter_03">Colorado Newsletter #03 - 08.02.2026</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_10">Antarctic Newsletter #10 - 02.01.2026</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Colorado_Newsletter_02">Colorado Newsletter #02 - 15.09.2025</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Colorado_Newsletter_01">Colorado Newsletter #01 - 27.01.2025</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Colorado_Newsletter_00">Colorado Newsletter #00 - 17.11.2024</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Hawaii_Newsletter_01">Hawaii Newsletter #01 - 05.10.2024</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Hawaii_Newsletter_00">Hawaii Newsletter #00 - 23.05.2024</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_09">Antarctic Newsletter #09 - 09.11.2023</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_08">Antarctic Newsletter #08 - 02.08.2023</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_07">Antarctic Newsletter #07 - 13.02.2023</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_06">Antarctic Newsletter #06 - 06.02.2023</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_05">Antarctic Newsletter #05 - 23.01.2023</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_04">Antarctic Newsletter #04 - 31.12.2022</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_03">Antarctic Newsletter #03 - 05.12.2022</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_02">Antarctic Newsletter #02 - 14.11.2022</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_01">Antarctic Newsletter #01 - 24.10.2022</a><br>
+<a class="newsletter-link" href="newsletters.html?n=Antarctic_Newsletter_00">Antarctic Newsletter #00 - 10.10.2022</a><br>
+</div>
+<hr class="title-line" />
+</div>
+
+<script>
+function displayNewsletter() {
+    const url = new URL(window.location.href);
+    const searchParams = new URLSearchParams();
+    const newsletter = url.searchParams.get('n');
+    if (newsletter) {
+        let url = 'static/projects/newsletters/' + newsletter + '.html';
+        fetch(url)
+        .then(response => {
+            return response.text();
+        })
+        .then(newsletterHTML => {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(newsletterHTML, 'text/html');
+            doc.querySelectorAll('img').forEach(img => {
+                img.src = 'static/projects/newsletters/' + img.getAttribute('src');
+            });
+            let newsletterPage = document.createElement('div');
+            newsletterPage.id = 'newsletter-page';
+            newsletterPage.innerHTML = doc.querySelector('body').innerHTML;
+            document.getElementById('newsletter-list').replaceWith(newsletterPage);
+        });
+    }
+}
+window.onload = displayNewsletter();
+</script>
+
+</body>
+</html>
