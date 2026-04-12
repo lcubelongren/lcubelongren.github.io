@@ -25,29 +25,42 @@
 
 <script>
 function homeAnimation() {
-    function createBox() {
+    function createBox(id, right, bottom) {
         let box = document.createElement('div');
         box.classList.add('home-animation-box');
-        box.id = 0;
+        box.id = id;
+        box.style.right = right;
+        box.style.bottom = bottom;
         document.body.append(box);
     }
-    createBox();
-	setInterval(frame, 5);
+    createBox(id=0, right=`${5}vw`, bottom=`${0}vw`);
+    let row = 1;
+    let col = 1;
+	setInterval(frame, 10);
+    let frame_num = 0;
 	function frame() {
         for (box of document.getElementsByClassName('home-animation-box')) {
-            let i = box.id;
-	        let rot = -i;
-            let slide = 0 + (i / 35);
-		    box.style.transform = `rotate(${rot}deg)`;
-            box.style.right = `${slide}vw`;
-            box.id = parseInt(box.id) + 1;
-            if (slide == 25) {
-                createBox();
+            let i = parseInt(box.id);
+            let rot = -i % 91;
+            if (i <= 90) {
+                box.id = i + 1;
+	            box.style.transform = `rotate(${rot}deg)`;
             }
-            if (slide >= 100) {
-                box.remove();
+        }
+        if (((frame_num % 100) == 0) & (frame_num != 0)) {
+            let bottom = row * 5;
+            let right = col * 5;
+            createBox(id=0, right=`${right}vw`, bottom=`${bottom}vw`);
+            if (row == 0) {
+                row = col;
+                col = 1;
             }
-		}
+            else {
+                row = row - 1;
+                col = col + 1;
+            }
+        }
+        frame_num++;
 	}
 }
 homeAnimation();
