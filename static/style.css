@@ -34,4 +34,4 @@ a:hover {color: var(--secondary-color);}
 
 .project-section {text-align: left; font-size: 3vw;}
 
-.home-animation-box {position: absolute; bottom: 1vw; height: 5vw; width: 5vw; background-color: var(--page-color);}
+.home-animation-box {position: absolute; height: 5vw; width: 5vw; transform-origin: bottom left; background-color: var(--page-color);}
