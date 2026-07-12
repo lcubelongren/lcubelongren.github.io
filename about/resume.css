@@ -11,12 +11,14 @@ body {
     height: auto;
     padding: 0.3in 0.5in 0.3in 0.5in;
     border: 0.05in solid black;
-    text-align: center;
     background-color: white;
 }
 
 hr {height: 0.02in; border: none; background-color: black;}
 
+#fullName {
+    text-align: center;
+}
 #givenName {
     display: inline;
     font-weight: normal;
@@ -28,34 +30,52 @@ hr {height: 0.02in; border: none; background-color: black;}
     font-size: 38px;
 }
 
-#containerMain {
-    margin-left: 2.25in;
+#pageContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+#mainContainer {
     padding-left: 0.15in;
     border-left: 0.02in solid black;
 }
-
-.sectionTitle{
-    text-align: left;
-    font-weight: bold;
-    margin: 0;
+#sideContainer {
+    padding-right: 0.15in;
+    text-align: right;
 }
 
-.jobContainer {
+.sectionTitle{
+    font-weight: bold;
+    margin: 0.025in 0 0 0;
+}
+
+.itemContainer {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+    align-items: end;
 }
-.jobContainer > * {flex: 1 1 auto;}
-.jobTitle {font-variant: small-caps; font-size: 19px;}
-.jobDates {text-align: right; font-size: 16px;}
-.jobBreak {flex-basis: 100%; height: 0;}
-.jobEmployer {font-size: 16px;}
-.jobPlace {text-align: right; font-size: 16px;}
-.jobDescription {
+.itemContainer > * {flex: 1 1 auto;}
+.itemTitle {font-variant: small-caps; font-size: 19px;}
+.itemDates {text-align: right; font-size: 16px;}
+.itemBreak {flex-basis: 100%; height: 0;}
+.itemEmployer {font-size: 16px;}
+.itemPlace {text-align: right; font-size: 16px;}
+.itemDescription {
     text-align: justify;
     font-size: 14px;
     margin: 0.05in 0 0.10in 0;
     padding-left: 0.0751in;
     border-left: 0.02in solid black;
 }
+.itemSide {
+    margin-bottom: 0.075in;
+}
 
+ol {
+    font-size: 15px;
+    padding-left: 0.3in;
+}
+li::marker {
+    content: '  [' counter(list-item) ']  ';
+    font-weight: bold;
+}
